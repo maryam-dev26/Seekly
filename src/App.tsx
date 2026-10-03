@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import Layout from './components/layout/Layout'
 
 function Home() {
   return <h1>Home</h1>
@@ -35,14 +36,16 @@ function About() {
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/explore" element={<Explore />} />
-      <Route path="/topics" element={<Topics />} />
-      <Route path="/topics/:topic" element={<Topic />} />
-      <Route path="/explore/:slug" element={<Exploration />} />
-      <Route path="/search" element={<Search />} />
-      <Route path="/people/:username" element={<Person />} />
-      <Route path="/about" element={<About />} />
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/explore" element={<Explore />} />
+        <Route path="/topics" element={<Topics />} />
+        <Route path="/topics/:topic" element={<Topic />} />
+        <Route path="/explore/:slug" element={<Exploration />} />
+        <Route path="/search" element={<Search />} />
+        <Route path="/people/:username" element={<Person />} />
+        <Route path="/about" element={<About />} />
+      </Route>
     </Routes>
   )
 }
