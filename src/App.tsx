@@ -1,33 +1,62 @@
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Layout from './components/layout/Layout'
+import Container from './components/layout/Container'
 
 function Explore() {
-  return <h1>Explore</h1>
+  return (
+    <Container>
+      <h1>Explore</h1>
+    </Container>
+  )
 }
 
 function Topics() {
-  return <h1>Topics</h1>
+  return (
+    <Container>
+      <h1>Topics</h1>
+    </Container>
+  )
 }
 
 function Topic() {
-  return <h1>Topic</h1>
+  return (
+    <Container>
+      <h1>Topic</h1>
+    </Container>
+  )
 }
 
 function Exploration() {
-  return <h1>Exploration</h1>
+  return (
+    <Container>
+      <h1>Exploration</h1>
+    </Container>
+  )
 }
 
 function Search() {
-  return <h1>Search</h1>
-}
+  return (
+    <Container>
+      <h1>Search</h1>
+    </Container>
+    )
+  }
 
 function Person() {
-  return <h1>Person</h1>
+  return (
+    <Container>
+      <h1>Person</h1>
+    </Container>
+  )
 }
 
 function About() {
-  return <h1>About</h1>
+  return (
+    <Container>
+      <h1>About</h1>
+    </Container>
+  )
 }
 
 function App() {

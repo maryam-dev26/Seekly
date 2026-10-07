@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import type { NavLinkRenderProps } from 'react-router-dom'
+import Container from './Container'
 
 const NAV_LINKS = [
   { label: 'Explore', to: '/explore' },
@@ -20,7 +21,8 @@ function Navbar() {
 
   return (
     <header className="border-b border-line">
-      <nav aria-label="Main" className="mx-auto w-full max-w-7xl px-4 sm:px-6">
+      <nav aria-label="Main"> 
+      <Container>
         <div className="flex items-center justify-between py-4">
           <Link to="/" onClick={closeMenu} className="font-display text-2xl text-brand">
             Seekly
@@ -77,6 +79,7 @@ function Navbar() {
             ))}
           </ul>
         )}
+        </Container>
       </nav>
     </header>
   )
