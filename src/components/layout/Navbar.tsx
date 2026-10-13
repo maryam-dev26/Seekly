@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import type { NavLinkRenderProps } from 'react-router-dom'
 import Container from './Container'
 
+
 const NAV_LINKS = [
   { label: 'Explore', to: '/explore' },
   { label: 'Topics', to: '/topics' },
