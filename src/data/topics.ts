@@ -12,3 +12,8 @@ export const TOPICS: Topic [] = [
     { slug: 'Productivity', label: 'Productivity' },
     { slug: 'self-improvement', label: 'Self-improvement' },   
 ]
+
+export function getTopicBySlug(slug: string): Topic | undefined {
+    return TOPICS
+    .find((topic) => topic.slug === slug)
+}
